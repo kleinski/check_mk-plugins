@@ -68,7 +68,7 @@ def check_zypper(_no_item, params, info):
     infotext = "%d updates" % updates
     if updates:
         patch_items = patch_types.items()
-        patch_items.sort()
+        patch_items = sorted(patch_items)
         infos = []
         this_time = int(time.time())
         first_see_counter = 0
